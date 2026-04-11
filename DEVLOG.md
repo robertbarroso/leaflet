@@ -33,4 +33,18 @@ Program should be able to do the following,
 - When a new student is created, a unique ID is created.
 - Users are able to set where the main root folder will live to store all information (locally hosted).
 
+## [Entry 2] - 2026-04-11
+**Status:** Development
+**Focus:** Validation
 
+Validation for student name has been implemented. Function validates to insure that the string coming in is a string. 
+Rejects text that is:
+- Less than a 1 length
+- Greater than 64 characters.
+- Including any symbol other than "-", "." and "'"
+
+  Testing suite using Jest has been utilized for this.
+  Testing suite uese a naming scheme X.X.X
+  First value : Testing file number
+  Second value : Type of test
+  Third value : Numbered test
