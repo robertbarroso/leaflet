@@ -1,6 +1,5 @@
-# OpenGrade
-
-An easy and simple open-source gradebook for tracking student grades and assignments — with report card generation, analytics, and full local data storage.
+# Leaflet
+A simple, easy-to-use gradebook web app for tracking student grades and assignments — with report card generation and full cloud-backed data storage.
 
 > ⚠️ This project is currently in active development. See [DEVLOG.md](./DEVLOG.md) for progress updates.
 
@@ -9,22 +8,20 @@ An easy and simple open-source gradebook for tracking student grades and assignm
 ## Tech Stack
 
 ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)
+![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat&logo=springboot&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat&logo=supabase&logoColor=white)
 
 - **Frontend:** React.js
-- **Backend:** Node.js, Express
-- **Database:** SQLite3 (local storage, no cloud required)
+- **Backend:** Java, Spring Boot (REST API)
+- **Database:** Supabase (PostgreSQL, hosted)
 
 ---
 
 ## Features
 
-- **Student grouping** — organize students by category, subject, or age group
-- **Flexible grading** — support for both weighted and unweighted homework, test, and quiz grades
-- **Color-coded tags** — user-defined tags for assignment categories
-- **Report card generation** — produce individual student report cards to share with parents or guardians
-- **Analytics dashboard** — visualize student performance broken down by category, subject, or age group
-- **Fully local** — all data stored on-device via SQLite, no internet connection or account required
-
----
+- **Class & section management** — create classes, add sections, and enroll students
+- **Flexible grading** — support for both weighted and unweighted grades across assignments, tests, and quizzes
+- **Color-coded categories** — visually distinguish assignment types at a glance
+- **Report card generation** — produce individual student report cards with grade summaries
+- **Cloud-hosted** — accessible from anywhere, no local install required
