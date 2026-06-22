@@ -1,50 +1,24 @@
 # DEVLOG
 
 This is where all updates to the software will be kept as we are developing it. 
-The project itself began on -> Feb 18 2026
+The project itself began on -> June 20 2026
 
 > ⚠️ This project is currently in active development.
 
-## [Entry 0] - 2026-02-18
-**Status:** Planning
-**Focus:** Init project repo
+## [Entry 0] - 2026-06-20
+**Status:** Planning & Designing
+**Focus:** Setup Supabase Database
 
-Initialized the repo to keep all files organized for the project. 
+Main focus for todays session was to design and organize the database. In this case, we'll be using Supabase. The free tier is generous for our purposes, and gives more practice in PostgresSQL. Thanks to OSU's database design class, this portion was easy. Tables for students, guardians, assignments, grades, and so on were added. Intersection tables were also added for connecting related tables (for example, students and their guardians). Also, it was important to ensure that all of the datatypes were appropriate for what that data is representing, like with dates and using String for the phone number (as it can be entered in with parenthesis or dashes). 
 
-## [Entry 1] - 2026-03-10
-**Status:** Planning
-**Focus:** Requirements
+**Next:** Implement POST and see changes in Supabase
 
-Program should be able to do the following, 
-- Organize their classes with the following order: Subject(s) -> Section/Class -> Students
-- All sections are color-coded, based on the user's preference
-- Homepage should allow users to see subjects (and information about them, like how many sections, number of students, etc).
-- Sections/classes should allow users to see information like overall grades, number of students (in each section), etc.
-- Within each section should contain all students.
-- Users create assignments which contain the following information: name, tag, topic, number of points.
-- Final grades can be cumulative or based on pre-defined percentages (Final is 20% of grade).
-- Assignments can be tagged and color-coded, based on user's preference.
-- Users can produce a report card for students, or report cards for the whole class.
-- Users can remove assignments, and final grades will be recalculated.
-- Users can click into a student, and see additional information.
-- Statistics are made avilable for each subject, section, and student with graphs and stats (like overall points).
-- Students can be added to multiple classes and subjects.
-- Users can add new students to classes or add existing ones.
-- When a new student is created, a unique ID is created.
-- Users are able to set where the main root folder will live to store all information (locally hosted).
+## [Entry 1] - 2026-06-22
+**Status:** Developing POST request (Spring)
+**Focus:** Get POST To Work
 
-## [Entry 2] - 2026-04-11
-**Status:** Development
-**Focus:** Validation
+Todays focus was to make one working POST request with Students, and make sure that at the end of the session that sending a POST request will reflect within the database. Learned how to use Jakarta.Persistence and what @RequestBody and @PostMapping does for Spring and how that relates to the CRUD operations. Implemented the POST and tested against a test.http file (not within the repo). Preparing for MVC, as we now have the model, controller, and soon will be view.
 
-Validation for student name has been implemented. Function validates to insure that the string coming in is a string. 
-Rejects text that is:
-- Less than a 1 length
-- Greater than 64 characters.
-- Including any symbol other than "-", "." and "'"
+**Next:** Add POST for all other tables and test.
 
-  Testing suite using Jest has been utilized for this.
-  Testing suite uese a naming scheme X.X.X
-  First value : Testing file number
-  Second value : Type of test
-  Third value : Numbered test
+
