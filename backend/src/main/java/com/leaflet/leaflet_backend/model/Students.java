@@ -15,6 +15,8 @@ public class Students {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Long student_id;
+
+    @Column(insertable = false, updatable = false)
     private OffsetDateTime created_at;
     private String first_name;
     private String last_name;
