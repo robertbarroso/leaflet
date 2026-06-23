@@ -5,7 +5,6 @@ import jakarta.persistence.*;
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
 
-
 @Entity
 @Table(name = "students")
 
@@ -13,11 +12,11 @@ public class Students {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Long student_id;
 
     @Column(insertable = false, updatable = false)
     private OffsetDateTime created_at;
+
     private String first_name;
     private String last_name;
     private String preferred_name;
@@ -29,8 +28,7 @@ public class Students {
     private String phone_number;
 
     // No Arg Constructor
-    public Students(){
-    }
+    public Students(){}
 
     // Full Constructor
     public Students(
